@@ -1,0 +1,75 @@
+# 🚀 NEXT.JS IGNORE RULES
+
+# Node modules (large files, should not be committed)
+node_modules/
+.next/
+out/
+yarn.lock
+package-lock.json
+
+# Build artifacts
+build/
+dist/
+
+# Environment variables (sensitive credentials)
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Logs and debugging
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.vscode/
+.DS_Store  # macOS metadata files
+
+# TypeScript
+*.tsbuildinfo
+
+---
+
+# 🐍 DJANGO & PIP IGNORE RULES
+
+# Python virtual environments (Do not commit venv)
+venv/
+env/
+Lib/site-packages/
+Scripts/
+bin/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Django settings & credentials (Sensitive data)
+.env
+config/settings_local.py
+
+# Django migrations (Optional: ignore all migrations except __init__.py)
+**/migrations/*.py
+!**/migrations/__init__.py
+
+# Database and migration files
+db.sqlite3
+*.sqlite3
+*.log
+*.pot
+*.pyc
+
+# Django cache, logs, and compiled files
+media/
+staticfiles/
+*.log
+*.swp
+
+# Pip package lock files (avoid committing package metadata)
+Pipfile
+Pipfile.lock
+poetry.lock
+
+# Installed packages
+*.egg-info/
+*.dist-info/
+__pycache__/
